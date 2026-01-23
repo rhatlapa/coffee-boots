@@ -1,6 +1,6 @@
 package io.github.stepio.cache.metrics;
 
-import org.springframework.boot.actuate.metrics.cache.CacheMetricsRegistrar;
+import org.springframework.boot.cache.metrics.CacheMetricsRegistrar;
 import org.springframework.cache.Cache;
 
 import java.util.concurrent.atomic.AtomicInteger;

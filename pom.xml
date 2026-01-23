@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.4</version>
+        <version>4.0.2</version>
     </parent>
     <groupId>io.github.stepio.coffee-boots</groupId>
     <artifactId>coffee-boots</artifactId>
@@ -19,9 +19,7 @@
     <url>https://github.io/stepio/coffee-boots</url>
 
     <properties>
-        <java.version>11</java.version>
-        <!-- Dependency versions -->
-        <awaitility.version>4.2.0</awaitility.version>
+        <java.version>17</java.version>
         <!-- Plugin versions -->
         <dependency-check-plugin.version>8.1.2</dependency-check-plugin.version>
         <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
@@ -53,17 +51,15 @@
         <url>https://github.com/stepio/coffee-boots</url>
     </scm>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.awaitility</groupId>
-                <artifactId>awaitility</artifactId>
-                <version>${awaitility.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-micrometer-metrics</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.github.ben-manes.caffeine</groupId>
             <artifactId>caffeine</artifactId>
