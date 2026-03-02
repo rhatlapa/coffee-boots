@@ -2,7 +2,7 @@ package io.github.stepio.cache.metrics;
 
 import io.github.stepio.cache.CacheCustomizer;
 import io.micrometer.core.instrument.Tag;
-import org.springframework.boot.actuate.metrics.cache.CacheMetricsRegistrar;
+import org.springframework.boot.cache.metrics.CacheMetricsRegistrar;
 import org.springframework.cache.Cache;
 
 /**
